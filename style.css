@@ -1,0 +1,108 @@
+#title {
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#list {
+    font-family: Roboto;
+}
+
+#listlist {
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #ddd;
+}
+  
+#listlist li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+  
+#listlist li #delete {
+    margin-left: auto;
+    border-radius: 20%;
+    border-color: black;
+    color: black;
+    background-color: rgb(255, 84, 84);
+    height: 30px;
+    width: 30px;
+}
+
+#listlist li:last-child {
+    border-bottom: none
+}
+
+/* https://codepen.io/LukeRFP/pen/XMbeRL */
+.button_plus {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    cursor: pointer;
+    border: 2px solid #095776;
+}
+  
+.button_plus:after {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 4px;
+    width: 50%;
+    background: #095776;
+    top: 50%;
+    left: 50%;
+}
+  
+.button_plus:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #095776;
+    height: 50%;
+    width: 4px;
+}
+  
+.button_plus:hover:before, .button_plus:hover:after {
+    background: #fff;
+    transition: 0.2s;
+}
+  
+.button_plus:hover {
+    background-color: #095776;
+    transition: 0.2s;
+}
+
+#export, #import {
+    margin-top: 50px;
+    width: 120px;
+    height: 50px;
+    color: black;
+    border-color: black;
+    border-radius: 5px;
+}
+
+#firsttimeconatiner {
+    position: relative;
+    height: 400px;
+    border: 2px solid #006100;
+    text-align: center;
+}
+
+#firsttime {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-color: black;
+    background-color: rgb(179, 179, 179);
+    z-index: 5;
+    width: 90vw;
+    height: 90vh;
+    padding: 10px;
+}

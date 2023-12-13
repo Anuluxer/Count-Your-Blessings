@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>&#128591 Count Your Blessings &#128591</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="./favicon.png">
+        <link rel="manifest" href="manifest.json">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" href="Greyson Rowland (Anuluxer)" />
+        <meta name="description" content="Add some things you're thankful for, this tool will keep track of what you have typed so you won't repeat things!">
+        <meta property="og:image" content="./favicon.png">
+        <meta property="og:description" content="Add some things you're thankful for, this tool will keep track of what you have typed so you won't repeat things!">
+        <meta property="og:title" content="Count Your Blessings">
+        <meta property="og:site_name" content="Count Your Blessings">
+        <meta itemprop="name" content="Count Your Blessings">
+        <meta itemprop="description" content="Add some things you're thankful for, this tool will keep track of what you have typed so you won't repeat things!">
+        <meta itemprop="image" content="./favicon.png">
+        <meta name="twitter:title" content="Count Your Blessings">
+        <meta name="twitter:description" content="Add some things you're thankful for, this tool will keep track of what you have typed so you won't repeat things!">
+        <meta name="twitter:image" content="./favicon.png">
+        <!-- https://www.npmjs.com/package/difflib -->
+        <script type="text/javascript" src="difflib.min.js"></script> 
+    </head>
+    <body>
+        <h1 id="title">Count Your Blessings &#128591</h1>
+        <div id="list">
+            <ul id="listlist"></ul>
+        </div>
+        <button class="button_plus" id="add"></button>
+        <button id="export">Export Data</button>
+        <button id="import">Import Data</button>
+        <div id="firsttimecontainer" style="visibility: hidden;">
+            <div id="firsttime">
+                <h1>Looks like this is your first time using this</h1>
+                <p>Click the plus icon to create an item.</p>
+                <p><i>It will notify you if you have something similar.</i></p>
+                <p>Accidentally added something?? No problem! Just click the item, a little X button will appear.</p>
+                <p>The Export Data button will download a file that contains all your thankfulness. &#128591</p>
+                <p>The Import Data button will add data from a file into the list <b>IT WILL ALSO OVERWRITE YOUR DATA SO BE CAREFUL!</b></p>
+                <p><b>IMPORTANT: IF YOU CLEAR YOUR BROWSER CACHE IT WILL CLEAR THE DATA FOR THIS WEBSITE!! MAKE REGULAR BACKUPS WITH THE EXPORT DATA BUTTON!!</b></p>
+                <p>Thats it, enjoy</p>
+                <p><i>Created by Greyson Rowland</i> :)</p>
+                <button onclick="this.parentNode.remove()">Continue</button>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
