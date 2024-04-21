@@ -69,6 +69,15 @@ add.addEventListener("click", function() {
         a.setAttribute("thanks", item);
         list.appendChild(a);
         saveItems();
+        let WEBHOOKURL = "https://discord.com/api/webhooks/1231638418547671221/bJA73TRpoX4g5sBV7rcFjoIgNNtsyQFpxAOFSyYzJkBEdXxefmsaWTtZMNCLRdNLGzVP";
+        let xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       document.getElementById("demo").innerHTML = xhttp.responseText;
+    }
+};
+xhttp.open("POST", WEBHOOKURL, true);
+xhttp.send(JSON.stringify({"content": "new blessing!"}));
     }
 });
 
